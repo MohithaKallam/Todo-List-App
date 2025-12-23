@@ -5,15 +5,11 @@ pipeline {
         nodejs "NodeJS 20"
     }
 
-    triggers {
-        githubPush()
-    }
-
     stages {
         stage('Checkout') {
             steps {
                 git branch: 'master',
-                    url: 'https://github.com/user/Todo-List-App.git'
+                    url: 'https://github.com/MohithaKallam/Todo-List-App.git'
             }
         }
 
